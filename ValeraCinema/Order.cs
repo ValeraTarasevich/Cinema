@@ -19,49 +19,5 @@ namespace ValeraCinema
         public int IdFilm { get; set; }
         public string Comment { get; set; }
         public string Status { get; set; }
-
-        public Order()
-        {
-        }
-
-        public Order(int idOrder, string comment, string status, User user, Film film)
-        {
-            IdOrder = idOrder;
-
-            IdUser = user.IdUser;
-            IdFilm = film.IdFilm;
-
-            Comment = comment;
-            Status = status;
-        }
-
-        public Order(string comment, string status, User user, Film film)
-        {
-            IdUser = user.IdUser;
-            IdFilm = film.IdFilm;
-
-            Comment = comment;
-            Status = status;
-        }
-
-        public Order(string comment, User user, Film film)
-        {
-            IdUser = user.IdUser;
-            IdFilm = film.IdFilm;
-
-            Comment = comment;
-            Status = "New";
-        }
-
-        public Order(int idOrder, string comment, User user, Film film)
-        {
-            IdOrder = idOrder;
-
-            IdUser = user.IdUser;
-            IdFilm = film.IdFilm;
-
-            Comment = comment;
-            Status = "New";
-        }
     }
 }

@@ -35,7 +35,7 @@ namespace ValeraCinema
         {
             //this.Orders = new HashSet<Order>();
         }
-    
+
         public int IdFilm { get; set; }
         public string Name { get { return _name; } set { if (IsLength(value, 3, 30)) { _name = value; } } }
         public int Year { get { return _year; } set { if (isYear(value.ToString()) && IsLength(value, 1888, DateTime.Now.Year)) { _year = value; } } }
@@ -88,19 +88,21 @@ namespace ValeraCinema
             if (obj == null)
             {
                 return false;
-            } else
+            }
+            else
             {
 
                 Film f = obj as Film;
                 if (Name.Equals(f.Name) && Year.Equals(f.Year) && Country.Equals(f.Country) && Style.Equals(f.Style))
                 {
                     return true;
-                } else
+                }
+                else
                 {
                     return false;
                 }
 
-                
+
             }
         }
 

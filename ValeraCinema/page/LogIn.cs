@@ -80,7 +80,7 @@ namespace ValeraCinema.Pages
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            CheckLogin(new List<TextBox> { log, pass }, new FilmsContainer().GetUsers);
+            CheckLogin(new List<TextBox> { log, pass }, new FilmsContainer().Users.ToList());
         }
 
         private void btnCloseWindow_Click(object sender, EventArgs e)

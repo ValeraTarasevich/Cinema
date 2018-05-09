@@ -4,6 +4,7 @@
     <EntitySet Name="Films1" EntityType="Films.Film" />
     <EntitySet Name="Users" EntityType="Films.User" />
     <EntitySet Name="Orders" EntityType="Films.Order" />
+    <EntitySet Name="Ords" EntityType="Films.Ord" />
   </EntityContainer>
   <EntityType Name="Film">
     <Key>
@@ -40,5 +41,15 @@
     <Property Name="IdFilm" Nullable="false" Type="Int32" />
     <Property Name="Comment" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
     <Property Name="Status" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="Ord">
+    <Key>
+      <PropertyRef Name="IdOrder" />
+    </Key>
+    <Property Name="IdOrder" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="IdUser" Type="Int32" Nullable="false" />
+    <Property Name="IdFilm" Type="Int32" Nullable="false" />
+    <Property Name="Comment" Type="String" Nullable="false" />
+    <Property Name="Status" Type="String" Nullable="false" />
   </EntityType>
 </Schema>

@@ -98,6 +98,7 @@
             this.Controls.Add(this.info);
             this.Name = "Tickets";
             this.Text = "Покупка билетов";
+            this.Load += new System.EventHandler(this.Tickets_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

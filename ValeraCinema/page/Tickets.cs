@@ -15,11 +15,11 @@ namespace ValeraCinema.Pages
     {
         FilmsContainer films;
         Film film;
-        
+
         public Tickets(Film f, FilmsContainer _films)
         {
             InitializeComponent();
-            films = new FilmsContainer();
+            films = _films;
             film = f;
             commet.Text = "";
 
@@ -27,11 +27,12 @@ namespace ValeraCinema.Pages
             info.Text += "Жанр: " + film.Style + Environment.NewLine;
             info.Text += "Страна: " + film.Country + Environment.NewLine;
             info.Text += "Год:" + film.Year + Environment.NewLine;
-            info.Text += "Цена: "+ film.Price + Environment.NewLine;
+            info.Text += "Цена: " + film.Price + Environment.NewLine;
             info.Text += "--------------------------" + Environment.NewLine;
             info.Text += "Роль в системе: " + User.getInstance().Nickname + Environment.NewLine;
             info.Text += "Никнейм: " + User.getInstance().Nickname + Environment.NewLine;
             info.Text += "Телефон: " + User.getInstance().Phone + Environment.NewLine;
+
 
         }
 
@@ -44,10 +45,29 @@ namespace ValeraCinema.Pages
         {
             if (commet.Text != "")
             {
-                Order o = new Order(User.getInstance().IdUser, film.IdFilm, commet.Text);
-                films.Orders.Add(o);
-                films.SaveChanges();
+                Ord o = new Ord(commet.Text, User.getInstance(), film);
+
+
+                List<Ord> os = films.Ords.ToList();
+
+                foreach (Ord ord in os)
+                {
+                    if ((ord.IdFilm == o.IdFilm) && (ord.IdUser == o.IdUser))
+                    {
+                        DialogManager.showDialogError("Повторяетесь, сударь/сударыня.", "");
+                        return;
+                    }
+                }
                 
+
+                films.Ords.Add(o);
+                films.SaveChanges();
+
+                DialogManager.showDialogInfo("Успешный заказ!", "");
+            }            
+            else
+            {
+                DialogManager.showDialogError("Введите пожалуйста количество требуемых мест", "");
             }
             //Order o = new Order(commet.Text, User.getInstance(), Film);
             //o.IdOrder = 10;
@@ -96,6 +116,15 @@ namespace ValeraCinema.Pages
             //{
             //    DialogManager.showDialogError("Введите пожалуйста количество требуемых мест", "");
             //}
+        }
+
+        private void Tickets_Load(object sender, EventArgs e)
+        {
+            if (User.getInstance().IdUser == 0)
+            {
+                DialogManager.showDialogError("Авториуйся или зарегайся, сука","");
+                Close();
+            }
         }
     }
 }

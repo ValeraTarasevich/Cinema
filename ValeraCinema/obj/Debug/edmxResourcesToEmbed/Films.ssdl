@@ -1,5 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Schema Namespace="Films.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+<Schema Namespace="Films.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2012" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="FilmsStoreContainer">
+    <EntitySet Name="Films1" EntityType="Films.Store.Films1" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Users" EntityType="Films.Store.Users" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Orders" EntityType="Films.Store.Orders" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Ords" EntityType="Films.Store.Ords" store:Type="Tables" Schema="dbo" />
+  </EntityContainer>
   <EntityType Name="Films1">
     <Key>
       <PropertyRef Name="IdFilm" />
@@ -15,18 +21,6 @@
     <Property Name="StartRental" Type="datetime" Nullable="false" />
     <Property Name="FinishRental" Type="datetime" Nullable="false" />
   </EntityType>
-  <EntityType Name="Orders">
-    <Key>
-      <PropertyRef Name="IdOrder" />
-    </Key>
-    <Property Name="IdOrder" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-    <Property Name="IdUser" Type="int" Nullable="false" />
-    <Property Name="IdFilm" Type="int" Nullable="false" />
-    <Property Name="Comment" Type="nvarchar(max)" Nullable="false" />
-    <Property Name="Status" Type="nvarchar(max)" Nullable="false" />
-    <Property Name="User_IdUser" Type="int" Nullable="false" />
-    <Property Name="Film_IdFilm" Type="int" Nullable="false" />
-  </EntityType>
   <EntityType Name="Users">
     <Key>
       <PropertyRef Name="IdUser" />
@@ -38,41 +32,24 @@
     <Property Name="Nickname" Type="nvarchar(max)" Nullable="false" />
     <Property Name="Password" Type="nvarchar(max)" Nullable="false" />
   </EntityType>
-  <Association Name="FK_FilmOrder">
-    <End Role="Films1" Type="Self.Films1" Multiplicity="1" />
-    <End Role="Orders" Type="Self.Orders" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="Films1">
-        <PropertyRef Name="IdFilm" />
-      </Principal>
-      <Dependent Role="Orders">
-        <PropertyRef Name="Film_IdFilm" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="FK_UserOrder">
-    <End Role="Users" Type="Self.Users" Multiplicity="1" />
-    <End Role="Orders" Type="Self.Orders" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="Users">
-        <PropertyRef Name="IdUser" />
-      </Principal>
-      <Dependent Role="Orders">
-        <PropertyRef Name="User_IdUser" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <EntityContainer Name="FilmsStoreContainer">
-    <EntitySet Name="Films1" EntityType="Self.Films1" Schema="dbo" store:Type="Tables" />
-    <EntitySet Name="Orders" EntityType="Self.Orders" Schema="dbo" store:Type="Tables" />
-    <EntitySet Name="Users" EntityType="Self.Users" Schema="dbo" store:Type="Tables" />
-    <AssociationSet Name="FK_FilmOrder" Association="Self.FK_FilmOrder">
-      <End Role="Films1" EntitySet="Films1" />
-      <End Role="Orders" EntitySet="Orders" />
-    </AssociationSet>
-    <AssociationSet Name="FK_UserOrder" Association="Self.FK_UserOrder">
-      <End Role="Users" EntitySet="Users" />
-      <End Role="Orders" EntitySet="Orders" />
-    </AssociationSet>
-  </EntityContainer>
+  <EntityType Name="Orders">
+    <Key>
+      <PropertyRef Name="IdOrder" />
+    </Key>
+    <Property Name="IdOrder" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IdUser" Type="int" Nullable="false" />
+    <Property Name="IdFilm" Type="int" Nullable="false" />
+    <Property Name="Comment" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Status" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Ords">
+    <Key>
+      <PropertyRef Name="IdOrder" />
+    </Key>
+    <Property Name="IdOrder" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IdUser" Type="int" Nullable="false" />
+    <Property Name="IdFilm" Type="int" Nullable="false" />
+    <Property Name="Comment" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Status" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
 </Schema>

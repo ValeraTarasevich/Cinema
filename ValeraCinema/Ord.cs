@@ -15,9 +15,53 @@ namespace ValeraCinema
     public partial class Ord
     {
         public int IdOrder { get; set; }
-        public string IdUser { get; set; }
-        public string IdFilm { get; set; }
+        public int IdUser { get; set; }
+        public int IdFilm { get; set; }
         public string Comment { get; set; }
         public string Status { get; set; }
+
+        public Ord()
+        {
+        }
+
+        public Ord(int idOrder, string comment, string status, User user, Film film)
+        {
+            IdOrder = idOrder;
+
+            IdUser = user.IdUser;
+            IdFilm = film.IdFilm;
+
+            Comment = comment;
+            Status = status;
+        }
+
+        public Ord(string comment, string status, User user, Film film)
+        {
+            IdUser = user.IdUser;
+            IdFilm = film.IdFilm;
+
+            Comment = comment;
+            Status = status;
+        }
+
+        public Ord(string comment, User user, Film film)
+        {
+            IdUser = user.IdUser;
+            IdFilm = film.IdFilm;
+
+            Comment = comment;
+            Status = "New";
+        }
+
+        public Ord(int idOrder, string comment, User user, Film film)
+        {
+            IdOrder = idOrder;
+
+            IdUser = user.IdUser;
+            IdFilm = film.IdFilm;
+
+            Comment = comment;
+            Status = "New";
+        }
     }
 }
