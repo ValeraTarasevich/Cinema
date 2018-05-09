@@ -1,0 +1,49 @@
+D:\Univer\Visual Studio Project\ValeraCinema\ValeraCinema\bin\Debug\ValeraCinema.exe.config
+D:\Univer\Visual Studio Project\ValeraCinema\ValeraCinema\bin\Debug\ValeraCinema.exe
+D:\Univer\Visual Studio Project\ValeraCinema\ValeraCinema\bin\Debug\ValeraCinema.pdb
+D:\Univer\Visual Studio Project\ValeraCinema\ValeraCinema\bin\Debug\EntityFramework.dll
+D:\Univer\Visual Studio Project\ValeraCinema\ValeraCinema\bin\Debug\EntityFramework.SqlServer.dll
+D:\Univer\Visual Studio Project\ValeraCinema\ValeraCinema\bin\Debug\EntityFramework.SqlServerCompact.dll
+D:\Univer\Visual Studio Project\ValeraCinema\ValeraCinema\bin\Debug\System.Data.SqlServerCe.dll
+D:\Univer\Visual Studio Project\ValeraCinema\ValeraCinema\bin\Debug\EntityFramework.xml
+D:\Univer\Visual Studio Project\ValeraCinema\ValeraCinema\bin\Debug\EntityFramework.SqlServer.xml
+D:\Univer\Visual Studio Project\ValeraCinema\ValeraCinema\bin\Debug\EntityFramework.SqlServerCompact.xml
+D:\Univer\Visual Studio Project\ValeraCinema\ValeraCinema\obj\Debug\ValeraCinema.csprojResolveAssemblyReference.cache
+D:\Univer\Visual Studio Project\ValeraCinema\ValeraCinema\obj\Debug\ValeraCinema.Form1.resources
+D:\Univer\Visual Studio Project\ValeraCinema\ValeraCinema\obj\Debug\ValeraCinema.Properties.Resources.resources
+D:\Univer\Visual Studio Project\ValeraCinema\ValeraCinema\obj\Debug\ValeraCinema.csproj.GenerateResource.Cache
+D:\Univer\Visual Studio Project\ValeraCinema\ValeraCinema\obj\Debug\ValeraCinema.csproj.CoreCompileInputs.cache
+D:\Univer\Visual Studio Project\ValeraCinema\ValeraCinema\obj\Debug\ValeraCinema.exe
+D:\Univer\Visual Studio Project\ValeraCinema\ValeraCinema\obj\Debug\ValeraCinema.pdb
+D:\Univer\Visual Studio Project\ValeraCinema\ValeraCinema\obj\Debug\ValeraCinema.AddFIlm.resources
+D:\Univer\Visual Studio Project\ValeraCinema\ValeraCinema\obj\Debug\ValeraCinema.Orders.resources
+d:\Univer\6_term\Тестирование и отладка ПО\ValeraCinema\ValeraCinema\bin\Debug\ValeraCinema.exe.config
+d:\Univer\6_term\Тестирование и отладка ПО\ValeraCinema\ValeraCinema\bin\Debug\ValeraCinema.exe
+d:\Univer\6_term\Тестирование и отладка ПО\ValeraCinema\ValeraCinema\bin\Debug\ValeraCinema.pdb
+d:\Univer\6_term\Тестирование и отладка ПО\ValeraCinema\ValeraCinema\bin\Debug\EntityFramework.dll
+d:\Univer\6_term\Тестирование и отладка ПО\ValeraCinema\ValeraCinema\bin\Debug\EntityFramework.SqlServer.dll
+d:\Univer\6_term\Тестирование и отладка ПО\ValeraCinema\ValeraCinema\bin\Debug\EntityFramework.SqlServerCompact.dll
+d:\Univer\6_term\Тестирование и отладка ПО\ValeraCinema\ValeraCinema\bin\Debug\System.Data.SqlServerCe.dll
+d:\Univer\6_term\Тестирование и отладка ПО\ValeraCinema\ValeraCinema\bin\Debug\EntityFramework.xml
+d:\Univer\6_term\Тестирование и отладка ПО\ValeraCinema\ValeraCinema\bin\Debug\EntityFramework.SqlServer.xml
+d:\Univer\6_term\Тестирование и отладка ПО\ValeraCinema\ValeraCinema\bin\Debug\EntityFramework.SqlServerCompact.xml
+d:\Univer\6_term\Тестирование и отладка ПО\ValeraCinema\ValeraCinema\obj\Debug\ValeraCinema.csprojResolveAssemblyReference.cache
+d:\Univer\6_term\Тестирование и отладка ПО\ValeraCinema\ValeraCinema\obj\Debug\ValeraCinema.Form1.resources
+d:\Univer\6_term\Тестирование и отладка ПО\ValeraCinema\ValeraCinema\obj\Debug\ValeraCinema.Orders.resources
+d:\Univer\6_term\Тестирование и отладка ПО\ValeraCinema\ValeraCinema\obj\Debug\ValeraCinema.Pages.AddSession.resources
+d:\Univer\6_term\Тестирование и отладка ПО\ValeraCinema\ValeraCinema\obj\Debug\ValeraCinema.Pages.Admin_panel.resources
+d:\Univer\6_term\Тестирование и отладка ПО\ValeraCinema\ValeraCinema\obj\Debug\ValeraCinema.Pages.LogIn.resources
+d:\Univer\6_term\Тестирование и отладка ПО\ValeraCinema\ValeraCinema\obj\Debug\ValeraCinema.Pages.SignIn.resources
+d:\Univer\6_term\Тестирование и отладка ПО\ValeraCinema\ValeraCinema\obj\Debug\ValeraCinema.Pages.Tickets.resources
+d:\Univer\6_term\Тестирование и отладка ПО\ValeraCinema\ValeraCinema\obj\Debug\ValeraCinema.Properties.Resources.resources
+d:\Univer\6_term\Тестирование и отладка ПО\ValeraCinema\ValeraCinema\obj\Debug\ValeraCinema.csproj.GenerateResource.Cache
+d:\Univer\6_term\Тестирование и отладка ПО\ValeraCinema\ValeraCinema\obj\Debug\ValeraCinema.csproj.CoreCompileInputs.cache
+d:\Univer\6_term\Тестирование и отладка ПО\ValeraCinema\ValeraCinema\obj\Debug\ValeraCinema.exe
+d:\Univer\6_term\Тестирование и отладка ПО\ValeraCinema\ValeraCinema\obj\Debug\ValeraCinema.pdb
+d:\Univer\6_term\Тестирование и отладка ПО\ValeraCinema\ValeraCinema\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+d:\Univer\6_term\Тестирование и отладка ПО\ValeraCinema\ValeraCinema\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+d:\Univer\6_term\Тестирование и отладка ПО\ValeraCinema\ValeraCinema\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+d:\Univer\6_term\Тестирование и отладка ПО\ValeraCinema\ValeraCinema\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+d:\Univer\6_term\Тестирование и отладка ПО\ValeraCinema\ValeraCinema\bin\Debug\nunit.framework.dll
+d:\Univer\6_term\Тестирование и отладка ПО\ValeraCinema\ValeraCinema\bin\Debug\nunit.framework.pdb
+d:\Univer\6_term\Тестирование и отладка ПО\ValeraCinema\ValeraCinema\bin\Debug\nunit.framework.xml

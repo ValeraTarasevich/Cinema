@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="d080077020c74ca0b3124a2d9a35ab9d" Name="Diagram1" >
+        <EntityTypeShape EntityType="Films.Film" Width="1.5" PointX="2.25" PointY="1.75" />
+        <EntityTypeShape EntityType="Films.User" Width="1.5" PointX="7.875" PointY="2.375" />
+        <EntityTypeShape EntityType="Films.Order" Width="1.5" PointX="5.125" PointY="2.375" />
+        <EntityTypeShape EntityType="Films.Ord" Width="1.5" PointX="5.5" PointY="5" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
