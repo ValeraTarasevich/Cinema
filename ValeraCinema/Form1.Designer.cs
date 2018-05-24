@@ -53,7 +53,7 @@
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(168, 76);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(660, 300);
+            this.dataGridView1.Size = new System.Drawing.Size(705, 300);
             this.dataGridView1.TabIndex = 0;
             // 
             // btnShowAllFilms
@@ -78,7 +78,7 @@
             // 
             // btnSignIn
             // 
-            this.btnSignIn.Location = new System.Drawing.Point(579, 8);
+            this.btnSignIn.Location = new System.Drawing.Point(615, 8);
             this.btnSignIn.Name = "btnSignIn";
             this.btnSignIn.Size = new System.Drawing.Size(124, 45);
             this.btnSignIn.TabIndex = 3;
@@ -88,7 +88,7 @@
             // 
             // btnLogIn
             // 
-            this.btnLogIn.Location = new System.Drawing.Point(709, 8);
+            this.btnLogIn.Location = new System.Drawing.Point(754, 8);
             this.btnLogIn.Name = "btnLogIn";
             this.btnLogIn.Size = new System.Drawing.Size(119, 45);
             this.btnLogIn.TabIndex = 4;
@@ -140,7 +140,7 @@
             // 
             // btnExit
             // 
-            this.btnExit.Location = new System.Drawing.Point(761, 8);
+            this.btnExit.Location = new System.Drawing.Point(806, 8);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(67, 45);
             this.btnExit.TabIndex = 11;
@@ -214,7 +214,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(860, 388);
+            this.ClientSize = new System.Drawing.Size(885, 388);
             this.Controls.Add(this.btnDeleteFilm);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.SearchBox);

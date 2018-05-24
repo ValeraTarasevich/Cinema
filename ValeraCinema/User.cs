@@ -26,8 +26,8 @@ namespace ValeraCinema
         private string _nickname;
         private string _phone;
 
-        string pattern = @"^[a-zA-Z][a-zA-Z0-9-_\.]{3,20}$";
-        string pattern_phone = @"[0-9]{2}[0-9]{3}[0-9]{4}";
+        string pattern = @"^[a-zA-Z][a-zA-Z0-9-_\.]{2,20}$";
+        string pattern_phone = @"^[0-9]{2}[0-9]{3}[0-9]{4}$";
 
         public User()
         {

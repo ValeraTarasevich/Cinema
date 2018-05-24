@@ -50,7 +50,7 @@ namespace ValeraCinema
             if (data == null || data.Count == 0)
             {
                 dgv.RowCount = 1;
-                DialogManager.showDialogError("Ничего не найденно по данным критериям", "");
+                DialogManager.showDialogError("Действующиих сеансов не обнаружено", "");
             }
             else
             {

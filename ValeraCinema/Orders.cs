@@ -28,6 +28,7 @@ namespace ValeraCinema
             dgv.Columns.Add("Film Name", "Film Name");
             dgv.Columns.Add("Status", "Status");
             dgv.Columns.Add("Id", "Id");
+            dgv.Columns.Add("Count Tickets", "Count Tickets");
         }
 
         private void LoadTable(DataGridView dgv, List<Ord> data)
@@ -58,6 +59,7 @@ namespace ValeraCinema
                 dataGridView1.Rows[row].Cells[2].Value = f.Name;
                 dataGridView1.Rows[row].Cells[3].Value = ord.Status;
                 dataGridView1.Rows[row].Cells[4].Value = ord.IdOrder;
+                dataGridView1.Rows[row].Cells[5].Value = ord.Comment;
             }
         }
 

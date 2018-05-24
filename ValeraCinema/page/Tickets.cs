@@ -54,7 +54,7 @@ namespace ValeraCinema.Pages
                 {
                     if ((ord.IdFilm == o.IdFilm) && (ord.IdUser == o.IdUser))
                     {
-                        DialogManager.showDialogError("Повторяетесь, сударь/сударыня.", "");
+                        DialogManager.showDialogError("У вас уже имеется заказ на этот фильм!", "");
                         return;
                     }
                 }
@@ -69,60 +69,14 @@ namespace ValeraCinema.Pages
             {
                 DialogManager.showDialogError("Введите пожалуйста количество требуемых мест", "");
             }
-            //Order o = new Order(commet.Text, User.getInstance(), Film);
-            //o.IdOrder = 10;
-            //if (!(commet.Text == ""))
-            //{
-            //    Order o = new Order();
-            //    o.IdFilm = film.IdFilm;
-            //    o.IdUser = User.getInstance().IdUser;
-            //    o.Status = "New";
-            //    o.Comment = commet.Text;
-            //    //o.Comment = Convert.ToInt32(commet);
-
-            //    if (o.Comment == null)
-            //    {
-            //        DialogManager.showDialogError("Поле для ввода информации должно содержать от 1 до 20 символов", "");
-            //        return;
-            //    }
-
-            //    o.Film = film;
-            //    o.User = User.getInstance();
-
-            //    films.Orders.Add(o);
-            //    //films.SaveChanges();
-
-
-            //    try
-            //    {
-            //        films.SaveChanges();
-            //    }
-            //    catch (DbEntityValidationException ex)
-            //    {
-            //        foreach (DbEntityValidationResult validationError in ex.EntityValidationErrors)
-            //        {
-            //            Console.Write("Object: " + validationError.Entry.Entity.ToString());
-            //            Console.Write(" ");
-            //            foreach (DbValidationError err in validationError.ValidationErrors)
-            //            {
-            //                Console.Write(err.ErrorMessage + " ");
-            //            }
-            //        }
-            //    }
-
-            //    DialogManager.showDialogInfo("Успешный заказ!", "");
-            //}
-            //else
-            //{
-            //    DialogManager.showDialogError("Введите пожалуйста количество требуемых мест", "");
-            //}
+     
         }
 
         private void Tickets_Load(object sender, EventArgs e)
         {
             if (User.getInstance().IdUser == 0)
             {
-                DialogManager.showDialogError("Авториуйся или зарегайся, сука","");
+                DialogManager.showDialogError("Нужно зарегистрироваться или авторизоваться","");
                 Close();
             }
         }
